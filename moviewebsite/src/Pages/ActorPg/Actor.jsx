@@ -7,12 +7,12 @@ const Actor = ({ actorId }) => {
 
   useEffect(() => {
     const fetchActorData = async () => {
-      const actorResponse = await axios.get(`https://api.themoviedb.org/3/person/${actorId}?api_key=YOUR_API_KEY`);
+      const actorResponse = await axios.get(`https://api.themoviedb.org/3/person/${actorId}?api_key=(<<-Api_key->>)`);
       setActor(actorResponse.data);
     };
 
     const fetchActorMovies = async () => {
-      const moviesResponse = await axios.get(`https://api.themoviedb.org/3/person/${actorId}/movie_credits?api_key=YOUR_API_KEY`);
+      const moviesResponse = await axios.get(`https://api.themoviedb.org/3/person/${actorId}/movie_credits?api_key=(<<-API_KEY->>`);
       setMovies(moviesResponse.data.cast);
     };
 
@@ -32,7 +32,7 @@ const Actor = ({ actorId }) => {
       <p>Popularity: {actor.popularity}</p>
       <p>Birthday: {actor.birthday}</p>
       <p>Biography: {actor.biography}</p>
-      <h3>Movies</h3>
+      <h3>Featured Movies</h3>
       <ul>
         {movies.map((movie) => (
           <li key={movie.id}>{movie.title}</li>
