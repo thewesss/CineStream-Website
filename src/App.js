@@ -1,9 +1,22 @@
-import React from 'react'
+import React from 'react';
+import './App.css';
+import Header from './components/Header';
+import MoviesPage from './Pages/MoviesPg/Movies';
+import Footer from './components/Footer';
+import API from './Util/API'
+import Movies from './MoviesPg/movie'
 
-const App = () => {
+function App() {
   return (
-    <div>App</div>
-  )
+    <div> 
+      <Header />
+      {/* <MoviesPage /> */}
+      <Movies/>
+      <Footer />
+      {/* <API /> */}
+      
+    </div>
+  );
 }
 
-export default App
+export default App;
