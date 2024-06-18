@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { apiKey } from '../Util/API';
+import { apiKey } from '../../Util/API';
 
-const Movie = () => {
+const Movies = () => {
     const [movies, setMovies] = useState([]);
 
     const fetchData = async () => {
@@ -35,4 +35,4 @@ const Movie = () => {
     );
 };
 
-export default Movie;
+export default Movies;
