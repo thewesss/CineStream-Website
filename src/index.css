@@ -11,3 +11,76 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.homepage {
+  background-color: black;
+  color: gold;
+  padding: 20px;
+}
+
+.homepage h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-item {
+  background-color: #1c1c1c;
+  border: 1px solid gold;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.movie-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movie-item h2 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.movie-item p {
+  font-size: 0.9em;
+  color: #e0e0e0;
+}
+
+/* MOVIES CSS */
+.movies-container {
+  background-color: black;
+  color: gold;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: gold;
+}
+
+.movie-slider {
+  display: flex;
+  justify-content: center;
+}
+
+.movie-item {
+  margin: 10px;
+}
+
+.movie-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
