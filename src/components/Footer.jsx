@@ -4,7 +4,7 @@ import Container from '@mui/material/Container';
 
 const Footer = () => {
     return (
-        <footer style={{ backgroundColor: 'black', color: 'gold', padding: '10px 0', marginTop: '20px' }}>
+        <footer>
             <Container maxWidth="lg">
                 <Typography variant="body1" align="center">
                     &copy; 2024 MovieWebsite. Created by Nhlanhla, Wesley. 
