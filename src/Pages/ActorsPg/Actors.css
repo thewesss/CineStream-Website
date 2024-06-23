@@ -1,0 +1,60 @@
+.actors-container {
+    padding: 20px;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: #e8b923;
+  }
+  h2 {
+    color: rgb(189, 215, 224);
+  }
+  .actors-grid {
+    border-top: 6px solid #e8b923;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .actor-card {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .actor-card img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .pagination button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination span {
+    font-size: 18px;
+    color: #ded4b1;
+  }
+  
