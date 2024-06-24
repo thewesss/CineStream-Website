@@ -4,7 +4,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { apiKey } from '../Util/API';
 import './Header.css'; 
-import SearchBar from '../Pages/SearchBar/Searchbar';
 
 const Navbar = () => {
   const [genres, setGenres] = useState([]);
