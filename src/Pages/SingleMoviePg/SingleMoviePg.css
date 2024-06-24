@@ -1,0 +1,222 @@
+body {
+    background: #0f0f0f;
+    color: #ded4b1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.movie-details-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+h1{
+    text-align: center;
+    color: rgb(189, 215, 224);
+}
+.glassmorphic-card {
+    margin-left: 14%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.movie-header {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.movie-poster {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-watch-container {
+    margin-top: 17px;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.rating-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-icon {
+    color: yellow;
+    margin-right: 5px;
+}
+
+.movie-rating {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.watch-now-button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff80;
+    text-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+.watch-now-button:hover,
+.watch-now-button:focus:focus {
+    color: #ffffff;
+    background: #ff0000;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff,
+                0 0 20px #008cff,
+                0 0 50px #008cff,
+                0 0 100px #008cff;
+    font-size: 16px;
+    border-color: transparent;
+}
+
+strong {
+    color: #ff9900;
+}
+
+.divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+}
+
+.overview {
+    margin: 20px 0;
+}
+
+.title-cards {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.title-cards h2 {
+    margin-bottom: 8px;
+}
+
+.card-list::-webkit-scrollbar {
+    display: none;
+}
+
+.card-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+.card-list img {
+    margin-top: 9px;
+    width: 240px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card-list .card {
+    position: relative;
+}
+
+.companies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.company-card img {
+    width: 100px;
+    border-radius: 4px;
+}
+
+/* New rating input styles */
+.user-rating {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.user-rating input {
+    display: none;
+}
+
+.user-rating label {
+    font-size: 60px;
+    cursor: pointer;
+    padding: 0 5px;
+    transition: color 0.2s ease-in-out;
+}
+
+.user-rating label:before {
+    content: "★";
+}
+
+.user-rating input:checked ~ label,
+.user-rating input:checked ~ label ~ label {
+    color: #ffa723;
+}
+
+.user-rating label:hover,
+.user-rating label:hover ~ label {
+    color: #ff9e0b;
+}
+
+.user-rating input:checked + label:hover,
+.user-rating input:checked + label:hover ~ label,
+.user-rating input:checked ~ label:hover,
+.user-rating input:checked ~ label:hover ~ label,
+.user-rating label:hover ~ input:checked ~ label {
+    color: #e58e09;
+}
+
+/* Carousel animation */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 5)); }
+}
+
+.companies-list {
+    display: flex;
+    animation: scroll 15s linear infinite;
+}
+
+.companies-list:hover {
+    animation-play-state: paused;
+}  
+  
+
+  
