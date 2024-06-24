@@ -257,7 +257,7 @@ input:not(:checked)+label+.ci {
 
 /* Scroll Container for TV shows */
 
-.scroll-container {
+.tv_shows-container {
     height: 30vh; /* Adjust height to be smaller */
     position: relative;
     margin: 20px 0;
@@ -268,7 +268,7 @@ input:not(:checked)+label+.ci {
     display: flex;
     justify-content: flex-start;
     top: 115%; /* Adjust top position to center it properly */
-    width: 380%;
+    width: 400%;
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
