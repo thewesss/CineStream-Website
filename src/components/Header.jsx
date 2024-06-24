@@ -53,7 +53,6 @@ const Navbar = () => {
             <span className='neon'>Cine</span><span className='flux'>Stream</span>
           </Link>
         </Typography>
-        <SearchBar />
         <Button onClick={handleMoviesMenuOpen}>
           <span className='act'>Movies</span>
         </Button>
