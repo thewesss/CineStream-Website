@@ -1,11 +1,11 @@
-
+import './Footer.css'
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
 const Footer = () => {
     return (
-        <footer style={{ backgroundColor: '#3f51b5', color: 'white', padding: '10px 0', marginTop: '20px' }}>
+        <footer>
             <Container maxWidth="lg">
                 <Typography variant="body1" align="center">
                     &copy; 2024 MovieWebsite. Created by Nhlanhla, Wesley. 
