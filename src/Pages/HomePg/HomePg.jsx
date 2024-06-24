@@ -163,7 +163,6 @@ const HomePage = () => {
 
       <div className='tv_shows-container'>
         <h2 className="carousel-title">Trending TV Shows</h2>
-        <div className="scroll-container">
           <div className="carousel-primary">
             {trendingTVShows.slice(0, 20).map((show, index) => (
               <div key={index} className="tv-show">
@@ -172,7 +171,6 @@ const HomePage = () => {
               </div>
             ))}
           </div>
-        </div>
       </div>
 
       <div className='trending-container'>
